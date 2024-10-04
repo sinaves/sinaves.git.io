@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobo - Desenvolvedor e Designer</title>
+    <meta name="description" content="Desenvolvedor Front End & UX/UT Designer, Lozalizado no Rio de Janeiro.">
+    <link rel="stylesheet" href="./css/styles.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/marca.svg" alt="Lobo" width="104" height="38">
+        <nav>
+            <ul class="header-menu">
+                <li><a href="#experiencia">Experiência</a></li>
+                <!--este # vai linkar para a mesma página, neste caso, mais pra baixo-->
+                <li> <a href="##formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="introducao">
+        <img src="./img/perfil.jpg" alt="Lobo Cinza" width="360px" height="520px">
+        <div>
+            <h1>Desenvolvedor <br> Front End & <br> UX/UT Designer</h1>
+            <p>Lozalizado no Rio de Janeiro 🏖️</p>
+        </div>
+    </main>
+
+    <section class="experiencia" id="experiencia" aria-label="Experiência">
+        <!-- Se eu quero que a section defina um ponto de referência, tem que ter o área label, senão, ela nem sempre define. Tbm criamos o id experiência, pois lá no header, na nav, no a temos o experiência com o #, que quando clicarmos lá em cima no a de experiência, já vai vir aqui pra baixo na seção experiência. Então, isso seria um link interno, uma âncora.-->
+        <h2 class="subtitulo">Experiência</h2>
+        <div>
+            <p class="experiencia-texto">
+                Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>,
+                <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu
+                trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.
+            </p>
+
+            <div class="empresa">
+                <span class="empresa-ano">2045</span>
+                <!-- O span usado aqui o ano está posicionado do lado de fora, assim será melhor usar um position absolute para poder posicionar este elemento sem quebrar a minha estrutura de 1fr 2fr. Pois se eu fizer isso, os itens não ficarão mais alinhados -->
+                <h3 class="empresa-titulo">Bikcraft</h3>
+                <span class="empresa-titulo">Desenvolvedor Júnior</span>
+                <p class="empresa-texto">No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e
+                    JavaScript do site. Além disso, também prestei consultoria no Design</p>
+                <ul class="empresa-habilidades">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>UX Designer</li>
+                    <li>UI Designer</li>
+                </ul>
+            </div>
+
+            <div class="empresa">
+                <span class="empresa-ano">2044-2045</span>
+                <h3 class="empresa-titulo">Surfbot</h3>
+                <span class="empresa-titulo">Estagiário</span>
+                <p class="empresa-texto">Surfbot é uma empresa que oferece aulas de surf no Rio de Janeiro. O projeto
+                    foi feito com HTML, CSS e JavaScripy. Todo o projeto foi feito do zero</p>
+                <ul class="empresa-habilidades">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="empresa">
+                <span class="empresa-ano">2044</span>
+                <h3 class="empresa-titulo">Brafé</h3>
+                <span class="empresa-titulo">Desenvolvedor Júnior</span>
+                <p class="empresa-texto">Mais de 3 projetos foram desenvolvidos para a a empresa Brafé. Eu trabalhei na
+                    criação do email marketing e também no HTML.</p>
+                <ul class="empresa-habilidades">
+                    <li>Email Marketing</li>
+                    <li>HTML</li>
+                    <li>UX Designer</li>
+                    <li>UI Designer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="formacao" id="formacao" aria-label="Formacao">
+        <!--Aqui temos o container, o elmento que segura o conteúdo que tem no máximo 1200px, se definirmos no máximo 1200px para a section inteira, quando ele for maior que 1200 não vai ter aquele background com o fundo diferente. Assim, neste momento, precisamos de uma div aqui dentro da section. Pois esta div vai manter o conteúdo nos 1200px e vai ter o grid e tudo mais, mas a section vai pintar o conteúdo por trás de preto e vai crescer infinitamente para o lado -->
+        <div class="formacao-container">
+            <h2 class="subtitulo">Formação</h2>
+
+            <div>
+                <p class="formacao-texto">
+                    Minha mais recente experiência acadêmica foi o <strong>mestrado</strong> 🎓 que fiz no exteiror em
+                    <strong>UX Design</strong>. Além disso me matenho sempre atualizado com cursos intensivos online.
+                </p>
+
+                <ul class="faculdade-lista">
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">Bacharel</span>
+                        <h3 class="faculdade-curso">Administração de Empresas</h3>
+                        <span class="faculdade-instituicao">UFRJ</span>
+                    </li>
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">Técnologo</span>
+                        <h3 class="faculdade-curso">Design Digital</h3>
+                        <span class="faculdade-instituicao">Infnet</span>
+                    </li>
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">Mestrado</span>
+                        <h3 class="faculdade-curso">User Experience Design</h3>
+                        <span class="faculdade-instituicao">UCLL</span>
+                    </li>
+                </ul>
+
+                <div class="formacao-extra">
+                    <div class="cursos">
+                        <h3>Cursos Intensivos</h3>
+                        <ul>
+                            <li>UX Design e UI Design <span>56h</span></li>
+                            <li>Front End para Iniciantes <span>72h</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="idiomas">
+                        <h3>Idiomas</h3>
+                        <ul>
+                            <li>Inglês <span>/ Fluente</span></li>
+                            <li>Espanhol <span>/ Intermediário</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contato">
+        <div class="formacao-container">
+            <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
+            <ul class="footer-contato">
+                <li>lobo@mail.com</li>
+                <li>+55 21 99999-9999</li>
+                <li> <a href="/">@instagram</a></li>
+            </ul>
+            <p class="footer-copy">Lobo. Alguns direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+@import './global.css'; /* fazendo isso estou importando o que escrever no syles.css. Tem outras formas de fazer isso, esta não é a mais otimizada. Veremos mais a frente um simples comando para importar tudo do outro css para este.*/
+@import './header.css';
+@import './introducao.css';
+@import './experiencia.css';
+@import './formacao.css';
+@import './footer.css';

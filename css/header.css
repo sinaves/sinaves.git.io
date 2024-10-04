@@ -1,0 +1,34 @@
+.header{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;  /* Para alinhar o conteúdo ao centro, um item de bloco que tem um tamanho máximo, eu posso alinhar com margen left e right de auto */
+    display: flex; /*quero um item ao lado do ouro */
+    justify-content: space-between; /*vai espaçar, ficando um em cada canto, o svg de um lado e a lista do outro*/
+    align-items: center;
+}
+   
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.header-menu a{
+    font-size: 1.25rem;
+    line-height: 1.3;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #141414;
+    display: block; /*para pegar corretamente os valores de padding*/
+}
+@media (max-width: 800px){
+    .header{
+        flex-direction: column; /* quando começar quebrar abaixo de 800,  os itens do flex vão quebrer numa coluna de baixo, ficando a imgem na de cima e os itens na de baixo */
+        gap: 40px;
+        padding: 20px;
+    }
+    .header a{
+        background: #f5f5f5;
+        border-radius: 4px;
+    }
+}

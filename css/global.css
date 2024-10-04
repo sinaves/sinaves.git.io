@@ -1,0 +1,37 @@
+body{
+    font-family: 'Fira Sans', Arial, sans-serif;
+    margin: 0px;
+    color: #141414;
+}
+
+h1, h2, h3, p{
+    margin: 0%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.subtitulo{
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch; /* o ch é o caracter 0, isso quer dizer que quando estiver bem expassado o experiência, vai quebrar nos 4 caracteres, que no caso aqui a primeira linha vai ficar EXPE, mas nem sempre o ch4 significa 4carateres, pq é o tamanho do valor zero. No meu caso os 4 caracteres deu com o 5ch. com 4ch deu 3 caracteres*/
+}
+
+@media (max-width: 800px) {
+    .subtitulo {
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial impora !important; /* para dizer que este valor é importante e não ser subcrito. Então sempre vai escrever por cima de qualquer outro valor que vier na frente, ou seja, não vai deixar nada inscrever por cima dele. */
+    }
+}

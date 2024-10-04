@@ -1,0 +1,65 @@
+.introducao{
+    max-width: 1200px; /*para não expandir mais do que o tamanho de conteúdo que queremos */ 
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* aqui a primeira coluna tem 1fr e a 2 o dobro do tamanho, então ficou 2fr */
+    gap: 100px;
+    align-items: center;
+   
+}
+
+.introducao h1{
+    font-size: 4.5rem;
+    line-height: 1.125; /*referente ao valor relativo de cima (4.5rem). */
+    margin-bottom: 30px;
+    position: relative; /*para que o detalhe tenha a posição relativa na introdução e não no top geral do site, e depois no introdução h1::before, definir como absolute*/
+}
+
+.introducao h1::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url('../img/detalhe.svg') no-repeat center;
+    position: absolute;
+    top: -15px; /* para jogar o detalhe mais para cima */
+    left: -40px; /* para jogar o detalhe mais para o lado */
+    z-index: -1; /*joga o elemento pra trás da letra D aqui neste caso */
+}
+.introducao p{
+    font-size: 1.5rem;
+    color: #525252;
+
+}
+
+@media (max-width: 1000px){
+    .introducao h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 800px){
+    .introducao{
+        grid-template-columns: 1fr 1fr; /* assim o tamanho das duas colunas vão ser proporcionais abaixo de 800 */
+        gap: 40px;
+    }
+    .introducao h1{
+        font-size: 2rem;
+    }
+    .introducao h1::before{ /*detalhe aqui está como before, por isso mexemos neste before */
+        width: 30px; 
+        height: 10px; /*diminui o tamanho deste detalhe abaixo de 800px */
+        left: 0px; /*coloquei ele para o lado, estava negativo agora ficou 0px */
+
+    }
+}
+
+@media (max-width: 400px){
+    .introducao{
+        grid-template-columns: 1fr;
+    }
+    .introducao img{
+        display: none;
+    }
+}
